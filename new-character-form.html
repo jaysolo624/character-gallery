@@ -37,7 +37,69 @@
         </div>
     </nav>
 
-    
+    <h2 class="text-center"> Add New Character</h2>
+    <p class="text-center">Share your favorite Stardew Valley character.</p>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm p-4">
+                    <h3 class="mb-4 text-center">Character Information</h3>
+                    <form class="row g-3 needs-validation" novalidate>
+
+                        <label for="validationCustom01" class="form-label">Character name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+
+
+                        <label for="validationCustom02" class="form-label">Image URL</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+
+
+
+                        <label for="validationCustom04" class="form-label">Location</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Pelican Town</option>
+                            <option>Cindersap Forest</option>
+                            <option>Beach</option>
+                            <option>Mountains</option>
+                            <option>Calico Desert</option>
+                            <option>Ginger Island</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid Location.
+                        </div>
+
+
+                        <label for="userMessage" class="form-label">Loved Gifts</label>
+                        <textarea class="form-control" id="gifts" rows="4"
+                            placeholder="This character loves..."></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a valid gift.
+                        </div>
+                        
+                        <label for="userMessage" class="form-label">Short Description</label>
+                        <textarea class="form-control" id="description" rows="4"
+                            placeholder="This character is..."></textarea>
+                        <div class="invalid-feedback">
+                            Please provide a valid description.
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
